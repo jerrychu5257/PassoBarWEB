@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Passo Bar Website</title>
+    <script type="module">
+        const menuButton = document.getElementById("menulist-button")
+        const closeButton = document.getElementById('close-button')
+        const menuList = document.getElementById('menu-list')
+    
+        if(menuButton){
+            menuButton.addEventListener("click", function(){
+                menuList.classList.remove('hidden');
+                menuList.classList.add('visible');
+            })
+        }
+    
+        if(closeButton){
+            closeButton.addEventListener('click', function(){
+                menuList.classList.remove('visible');
+                menuList.classList.add('hidden');
+            })
+        }
+    </script>
+</head>
+<body>
+    <div id="Home">
+        <section id="Main" class="S01_Main">
+            <a class="logo-container" href="#Main">
+                <img id="logo" src="./src/images/Logo_Passo.png">
+            </a>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li class="nav-Home"><a href="#Main">Home</a></li>
+                    <li class="nav-Menu"><a href="#Menu">Menu</a></li>
+                    <li class="nav-Contact"><a  href="#Contact">Contact</a></li>
+                    <li class="nav-Reservation"><a href="#Reservation">Reservation</a></li>
+                </ul>
+            </nav>
+            <button id="menulist-button" > 
+                <div class="menu">
+                    <img src="./src/icon/hamburger-menu.svg" alt="">
+                </div>
+            </button>
+            <a class="icon-down" href="#About">
+                <img src="./src/icon/Arrow downward.png" alt="">
+            </a>
+            <img class="backgroundIMG" src="./src/images/lobby.png">
+        </section>
+        <section id="menu-list" class="hidden">
+            <a href="./index.html">
+                <img id="logo" src="./src/images/Logo_Passo_br.png">
+            </a>
+            <button id="close-button">                
+                <div class="menu">
+                    <img src="./src/icon/cancel.svg" alt="">
+                </div>
+            </button>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="#Main">HOME</a></li>
+                    <li><a href="#Menu">MENU</a></li>
+                    <li><a href="#Contact">CONTACT</a></li>
+                    <li class="icon-list">
+                        <div class="icons">
+                            <a class="icon" href="https://www.facebook.com/" target="_blank"> 
+                                <img src="src/icon/icon_Facebook_br.svg" alt="">
+                            </a>
+                            <a class="icon" href="https://www.instagram.com/" target="_blank"> 
+                                <img src="src/icon/icon_ig_br.svg" alt="">
+                            </a>
+                            <a class="icon" href="https://www.tiktok.com/" target="_blank"> 
+                                <img src="src/icon/icon_tiktok_br.svg" alt="">
+                            </a>
+                        </div> 
+                    </li>
+                    <li><a class="ReservationBtn" href="#Reservation">MAKE A RESERVATION</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section id="About" class="S02_About">
+            <h1>PASSO IS A WINE BAR THAT<br>
+                FOCUSES ON EVERY DRIP OF ALCOHOL<br>
+                WHICH MAKES US UNIQUE IN AUSTRALIA.</h1>
+            <ul class="nav-list">
+                <li><a class="ReservationBtn" href="#Reservation">MAKE A RESERVATION</a></li>
+            </ul>
+        </section>
+        <section class="S03_Photo01">
+            <img class="backgroundIMG" src="src/images/drinks.png">
+        </section>
+        <section id="Menu" class="S04_Menu">
+            <h1 class="title">OUR MENU</h1>
+            <div class="menu-container">
+                <a class="link" href="src/pdf/Menu-Drink.pdf" target="blank">
+                    <div class="image-container">
+                        <img class="menu-image" src="src/images/menu_Alcohol.png">
+                        <div class="text-container">
+                            <img src="src/icon/icon_Cocktail 1.png">
+                            <h3>Alcohol</h3>
+                        </div>
+                    </div>
+                </a>
+                <a class="link" href="src/pdf/Menu-NonAlcohol.pdf" target="blank">
+                    <div class="image-container">
+                        <img class="menu-image" src="src/images/menu_nonAlcohol.png">
+                        <div class="text-container">
+                            <img src="src/icon/icon_Cup With Straw 1.png">
+                            <h3>Non-Alcohol</h3>
+                        </div>
+                    </div>
+                </a>
+                <a class="link" href="src/pdf/Menu-Food.pdf" target="blank">
+                    <div class="image-container">
+                        <img class="menu-image" src="src/images/menu_Food.png">
+                        <div class="text-container">
+                            <img src="src/icon/icon_Hamburger 1.png">
+                            <h3>Food</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <img class="backgroundIMG" src="src/background/Home_Menu_bg2.png">
+        </section>
+        <section class="S05_Photo02">
+            <img class="backgroundIMG" src="src/images/bottles2.png">
+        </section>
+        <section id="Reservation" class="S06_Reservation">
+            <div class="content-container">
+                <img src="src/images/cocktail.png">
+                <div class="text-container">
+                    <h1>RESERVATION</h1>
+                    <p>make your reservation here</p>
+                    <a class="ReservationBtn" href="https://obee.com.au/byrdi/" target="_blank">MAKE A RESERVATION</a>
+                </div>
+            </div>
+            <img class="backgroundIMG" src="src/background//Home_Menu_bg.png">
+        </section>
+        <section class="S07_Photo03">
+            <img class="backgroundIMG" src="src/images/bottles3.png">
+        </section>
+        <section id="Contact" class="S08_Contact">
+            <img class="backgroundIMG" src="src/background//Menu_Menu_bg.png">
+            <div class="content-container">
+                <img src="src/images/Contact_room.png">
+                <div class="text-container">
+                    <h1>CONTACT US</h1>
+                    <p><a class="link" href="tel:02-8224-5777">(02) 8224 5777</a><br>
+                    <a class="link" href="https://obee.com.au/byrdi/" target="_blank">booking@passo.com</a></p>
+                    <p><a class="link" href="https://www.google.com/maps/place/Byrdi/@-37.8104065,144.9594175,17z/data=!3m1!4b1!4m6!3m5!1s0x6ad643777826b68f:0x93062b1b78f75991!8m2!3d-37.8104065!4d144.9619924!16s%2Fg%2F11h7svn92m?entry=ttu&g_ep=EgoyMDI0MDkyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">140 Passo street, Chipendale, Sydney, <br>
+                        NSW, 2008, Australia</a></p>
+                    <div class="icons">
+                        <a class="icon" href="https://www.facebook.com/" target="_blank"> 
+                            <img src="src/icon/icon_Facebook_gold.png" alt="">
+                        </a>
+                        <a class="icon" href="https://www.instagram.com/" target="_blank"> 
+                            <img src="src/icon/icon_ig_gold.png" alt="">
+                        </a>
+                        <a class="icon" href="https://www.tiktok.com/" target="_blank"> 
+                            <img src="src/icon/icon_tiktok_gold.png"  alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="S09_Definition">
+            <div class="text-container">
+                <div class="margin">
+                    <div class="word">
+                        <h3 class="medium">PASSO</h3>
+                        <h3 class="light">/ 'pasʊ /</h3>
+                    </div>
+                    <p><i class="italic light">Noun</i><br>to take one step forward.</p>
+                    <p><i class="italic light">Origin</i><br><span class="light">English, Step / step /.</span> a stage in a process; an action in a series of actions taken for a particular purpose.</p>
+                </div>
+            </div>
+            <img class="backgroundIMG" src="src/background/Home_Definition_bg.png">
+        </section>
+        <section class="S10_Photo04">
+            <img class="backgroundIMG" src="src/images/livingroom.png">
+        </section>
+        <section class="S11_StoryOf">
+            <div class="text-container">
+                <h1>STORY OF PASSO</h1>
+                <p >PASSO wine bar is born in 1994. The first bar located in Taipei, Taiwan. PASSO is desire to introduce Mise en place Craftsman's spirit into the bar and provide both taste of drinks and decent environment to every guest who stay in PASSO. PASSO believes that every great piece of artwork comes from tiny but precise steps to complete. The spirit of making every steps perfect makes PASSO here to welcome your coming.</p>
+            </div>
+            <img class="backgroundIMG" src="src/background/Home_StoryOf_bg.png">
+        </section>
+        <section class="Footer">
+            <img class="logo" src="src/images/Logo_Passo_footer.png">
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li>
+                        <h1>Visit Us</h1>
+                        <p class="list-1st Inter">140 Passo street, Chipendale, Sydney, NSW, 2008, Australia</p>
+                    </li>
+                    <li>
+                        <h1>Hours</h1>
+                        <div class="list-mid Inter"><div>
+                            <span class="boldtitle bold Inter">BREAKFAST</span><br>
+                            <span class="Inter">
+                                Mon - Fri<br>
+                                6:30 - 10:00am<br>
+                                Sat - Sun<br>
+                                7:00 - 11:00am<br><br>
+                            </span>
+                        </div>
+                        <div>
+                            <span class="boldtitle bold Inter">LUNCH</span><br>
+                            <span class="Inter">
+                                Tue - Sat<br>
+                                11:30 - 2:00pm<br><br>
+                            </span>
+                        </div>
+                        <div>
+                            <span class="boldtitle bold Inter">DINNER</span><br>
+                            <span class="Inter">
+                                Tue - Sat<br>
+                                5:30 - 10:00pm
+                            </span>
+                        </div></div>
+                    </li>
+                    <li>
+                        <h1>Contact Us</h1>
+                        <p class="Inter">(02) 8224 5777<br>booking@passo.com</p>
+                        <div class="icons">
+                            <a class="icon" href="https://www.facebook.com/" target="_blank"> 
+                                <img src="src/icon/icon_Facebook.png" alt="">
+                            </a>
+                            <a class="icon" href="https://www.instagram.com/" target="_blank"> 
+                                <img src="src/icon/icon_ig.png" alt="">
+                            </a>
+                            <a class="icon" href="https://www.tiktok.com/" target="_blank"> 
+                                <img src="src/icon/icon_tiktok.png" alt="">
+                            </a>
+                        </div> 
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </div>
+</body>
+</html>
